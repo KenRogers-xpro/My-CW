@@ -1,19 +1,272 @@
-<!-- This is a restuarant website For Ninaz Restuarant 
-Lutaaya Ken Rogers
-2300101229
-2023|AUG|BCS|B233087|DAY -->
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninaz Restaurant</title>
-    <link rel="stylesheet" href="NinazRestuarant.css">
-
+    <title>Ninaz Restaurant - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ninaz Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="login.html">Admin Login</a></li>
+                <li><a href="resume.html">Careers</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<BODY>
-    
-</BODY>
+    <main>
+        <!-- Welcome Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Ninaz Restaurant</h2>
+                <p>Experience the finest culinary delights in a warm and elegant atmosphere</p>
+                <div class="cta-buttons">
+                    <a href="#menu" class="btn primary">View Our Menu</a>
+                    <a href="#contact" class="btn secondary">Book a Table</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" onclick="openTab('food')">Food</button>
+                <button class="tab-btn" onclick="openTab('drinks')">Drinks</button>
+            </div>
+            
+            <div id="food" class="tab-content active">
+                <h3>Main Courses</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Grilled Salmon">
+                        <h4>Grilled Salmon</h4>
+                        <p>Fresh salmon fillet grilled to perfection, served with seasonal vegetables and lemon butter sauce.</p>
+                        <span class="price">$24.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Beef Tenderloin">
+                        <h4>Beef Tenderloin</h4>
+                        <p>Premium cut beef tenderloin with truffle mashed potatoes and red wine reduction.</p>
+                        <span class="price">$29.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Vegetable Risotto">
+                        <h4>Vegetable Risotto</h4>
+                        <p>Creamy arborio rice with seasonal vegetables, parmesan cheese, and herbs.</p>
+                        <span class="price">$18.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Chicken Parmesan">
+                        <h4>Chicken Parmesan</h4>
+                        <p>Breaded chicken breast topped with marinara sauce and melted mozzarella, served with pasta.</p>
+                        <span class="price">$21.99</span>
+                    </div>
+                </div>
+                
+                <h3>Appetizers</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Bruschetta">
+                        <h4>Bruschetta</h4>
+                        <p>Toasted bread topped with fresh tomatoes, basil, garlic, and olive oil.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Calamari">
+                        <h4>Calamari</h4>
+                        <p>Crispy fried calamari served with lemon aioli and marinara sauce.</p>
+                        <span class="price">$12.99</span>
+                    </div>
+                </div>
+                
+                <h3>Desserts</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Tiramisu">
+                        <h4>Tiramisu</h4>
+                        <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                        <span class="price">$8.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Chocolate Lava Cake">
+                        <h4>Chocolate Lava Cake</h4>
+                        <p>Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="drinks" class="tab-content">
+                <h3>Cocktails</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Signature Martini">
+                        <h4>Signature Martini</h4>
+                        <p>Our house specialty with premium vodka, vermouth, and a twist of lemon.</p>
+                        <span class="price">$12.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Mojito">
+                        <h4>Mojito</h4>
+                        <p>Refreshing mix of rum, mint, lime, sugar, and soda water.</p>
+                        <span class="price">$10.99</span>
+                    </div>
+                </div>
+                
+                <h3>Wines</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Cabernet Sauvignon">
+                        <h4>Cabernet Sauvignon</h4>
+                        <p>Full-bodied red wine with notes of black currant and cedar.</p>
+                        <span class="price">$9.99 / glass</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Chardonnay">
+                        <h4>Chardonnay</h4>
+                        <p>Medium-bodied white wine with apple and vanilla notes.</p>
+                        <span class="price">$8.99 / glass</span>
+                    </div>
+                </div>
+                
+                <h3>Non-Alcoholic</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Fresh Lemonade">
+                        <h4>Fresh Lemonade</h4>
+                        <p>Homemade lemonade with fresh lemons and a hint of mint.</p>
+                        <span class="price">$4.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="placeholder.svg?height=200&width=300" alt="Italian Soda">
+                        <h4>Italian Soda</h4>
+                        <p>Sparkling water with your choice of fruit syrup and cream.</p>
+                        <span class="price">$5.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Ninaz Restaurant</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="placeholder.svg?height=400&width=600" alt="Ninaz Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <p>Founded in 2010, Ninaz Restaurant has been serving exquisite cuisine in a warm and elegant atmosphere for over a decade. Our passion for culinary excellence and exceptional service has made us a favorite dining destination.</p>
+                    <p>Chef Nina, our founder, brings her international experience and love for local ingredients to create a menu that celebrates both tradition and innovation. Every dish is crafted with care, using the freshest seasonal ingredients sourced from local farmers and suppliers.</p>
+                    <p>Our mission is to provide an unforgettable dining experience that delights all the senses and creates lasting memories for our guests.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Culinary Avenue, Foodville, FD 12345</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@ninazrestaurant.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon-Thu: 11am-10pm<br>Fri-Sat: 11am-11pm<br>Sun: 10am-9pm</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDA0JzQ3LjIiTiA3NMKwMDAnMTMuMyJX!5e0!3m2!1sen!2sus!4v1620160882595!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="reservation-form">
+                    <h3>Book a Table</h3>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" min="1" max="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Ninaz Restaurant</h2>
+                <p>Culinary Excellence Since 2010</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p>Monday - Thursday: 11am - 10pm</p>
+                <p>Friday - Saturday: 11am - 11pm</p>
+                <p>Sunday: 10am - 9pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ninaz Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

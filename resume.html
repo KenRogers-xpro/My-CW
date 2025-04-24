@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninaz Restaurant - Careers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ninaz Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Admin Login</a></li>
+                <li><a href="resume.html" class="active">Careers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="careers-section">
+            <div class="careers-header">
+                <h2>Join Our Team</h2>
+                <p>We're always looking for talented individuals who are passionate about food and hospitality. Check out our current openings and apply today!</p>
+            </div>
+            
+            <div class="job-listings">
+                <h3>Current Openings</h3>
+                <div class="job-list">
+                    <div class="job-card">
+                        <h4>Head Chef</h4>
+                        <p class="job-type">Full-time</p>
+                        <p>We're looking for an experienced Head Chef to lead our kitchen team and create exceptional culinary experiences for our guests.</p>
+                        <button class="btn primary job-apply-btn" data-job="Head Chef">Apply Now</button>
+                    </div>
+                    <div class="job-card">
+                        <h4>Server</h4>
+                        <p class="job-type">Part-time / Full-time</p>
+                        <p>Join our front-of-house team to provide excellent service and create memorable dining experiences for our guests.</p>
+                        <button class="btn primary job-apply-btn" data-job="Server">Apply Now</button>
+                    </div>
+                    <div class="job-card">
+                        <h4>Bartender</h4>
+                        <p class="job-type">Full-time</p>
+                        <p>We're seeking a creative and experienced bartender to craft exceptional cocktails and provide outstanding service.</p>
+                        <button class="btn primary job-apply-btn" data-job="Bartender">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="application-form-container" class="application-form-container hidden">
+                <h3>Apply for: <span id="job-title">Position</span></h3>
+                <form id="resume-form">
+                    <input type="hidden" id="job-position" name="job-position">
+                    
+                    <!-- Contact Information Section -->
+                    <div class="form-section">
+                        <h4>Contact Information</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" name="full-name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-address">Email Address</label>
+                                <input type="email" id="email-address" name="email-address" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" id="phone-number" name="phone-number" required>
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" required>
+                                <span class="error-message" id="address-error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Key Summary Section -->
+                    <div class="form-section">
+                        <h4>Key Summary</h4>
+                        <div class="form-group">
+                            <label for="professional-summary">Professional Summary</label>
+                            <textarea id="professional-summary" name="professional-summary" rows="4" required></textarea>
+                            <span class="error-message" id="summary-error"></span>
+                            <p class="form-hint">Briefly highlight your experience, competence, and skills relevant to the position.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Section -->
+                    <div class="form-section">
+                        <h4>Education</h4>
+                        <div id="education-container">
+                            <div class="education-entry">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="institution-1">Institution</label>
+                                        <input type="text" id="institution-1" name="institution-1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="degree-1">Degree/Certificate</label>
+                                        <input type="text" id="degree-1" name="degree-1" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="year-1">Year</label>
+                                        <input type="text" id="year-1" name="year-1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="major-1">Major/Field of Study</label>
+                                        <input type="text" id="major-1" name="major-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="add-education" class="btn secondary">Add More Education</button>
+                    </div>
+                    
+                    <!-- Work Experience Section -->
+                    <div class="form-section">
+                        <h4>Work Experience</h4>
+                        <div id="experience-container">
+                            <div class="experience-entry">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="company-1">Company/Organization</label>
+                                        <input type="text" id="company-1" name="company-1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="position-1">Position</label>
+                                        <input type="text" id="position-1" name="position-1" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="start-date-1">Start Date</label>
+                                        <input type="month" id="start-date-1" name="start-date-1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="end-date-1">End Date</label>
+                                        <input type="month" id="end-date-1" name="end-date-1">
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="current-job-1" name="current-job-1">
+                                            <label for="current-job-1">I currently work here</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="responsibilities-1">Responsibilities & Achievements</label>
+                                    <textarea id="responsibilities-1" name="responsibilities-1" rows="3" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="add-experience" class="btn secondary">Add More Experience</button>
+                    </div>
+                    
+                    <!-- Skills Section -->
+                    <div class="form-section">
+                        <h4>Skills</h4>
+                        <div class="form-group">
+                            <label for="skills">List your relevant skills</label>
+                            <textarea id="skills" name="skills" rows="3" required></textarea>
+                            <span class="error-message" id="skills-error"></span>
+                            <p class="form-hint">Separate skills with commas (e.g., Customer Service, Food Preparation, Team Management)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Resume Upload -->
+                    <div class="form-section">
+                        <h4>Upload Resume</h4>
+                        <div class="form-group">
+                            <label for="resume-file">Upload your resume (PDF or Word document)</label>
+                            <input type="file" id="resume-file" name="resume-file" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Submit Application</button>
+                        <button type="button" id="cancel-application" class="btn secondary">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div id="application-success" class="application-success hidden">
+                <i class="fas fa-check-circle"></i>
+                <h3>Application Submitted!</h3>
+                <p>Thank you for your interest in joining Ninaz Restaurant. We've received your application and will review it shortly. If your qualifications match our needs, we'll contact you for the next steps.</p>
+                <button id="new-application" class="btn primary">Apply for Another Position</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Ninaz Restaurant</h2>
+                <p>Culinary Excellence Since 2010</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="resume.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p>Monday - Thursday: 11am - 10pm</p>
+                <p>Friday - Saturday: 11am - 11pm</p>
+                <p>Sunday: 10am - 9pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ninaz Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
