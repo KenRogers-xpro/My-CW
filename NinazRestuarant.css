@@ -268,9 +268,10 @@ section h2::after {
     display: none;
 }
 
-.tab-content.active {
+.active {
     display: block;
 }
+
 
 .menu-grid {
     display: grid;

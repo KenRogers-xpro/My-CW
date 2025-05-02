@@ -49,6 +49,7 @@ function openTab(tabName) {
     // Show the selected tab content
     document.getElementById(tabName).classList.add('active');
     
+    
     // Update active state of tab buttons
     const tabBtns = document.querySelectorAll('.tab-btn');
     tabBtns.forEach(btn => {
@@ -87,6 +88,7 @@ function setupBookingForm() {
 
 // Login Form Function
 function setupLoginForm() {
+    console.log('Login form setup');
     const loginForm = document.getElementById('loginForm');
     if (!loginForm) return;
     
@@ -116,11 +118,12 @@ function setupLoginForm() {
         
         if (isValid) {
             // For demo purposes, we'll use a simple check
-            // In a real application, this woul  {
+            // In a real application, this would  {
             // For demo purposes, we'll use a simple check
             // In a real application, this would involve server-side authentication
-            if (username === 'admin' && password === 'password123') {
+            if (username === 'Linda' && password === 'Linda') {
                 // Redirect to stock page
+                sessionStorage.setItem('loggedIn', 'true');
                 window.location.href = 'stock.html';
             } else {
                 alert('Invalid username or password. Please try again.');
