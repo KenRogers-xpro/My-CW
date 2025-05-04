@@ -1,0 +1,48 @@
+*{
+	//padding: 0;
+	//font-family: Arieal;
+}
+
+body {
+	background-image: URL('best-xbox-one-games.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+        min-height: 100vh;
+	line-height: 50%;
+	
+}
+
+#Container{
+	background: red;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	border-radius: 15px;
+	color: white;
+}
+
+#heading{
+	color: black;
+	font-size: 50px;
+}
+
+.Sessions-1{
+	//display: flex;
+	//flex-direction: column;
+	
+
+}
+
+.Sessions-2{
+	//display: flex;
+	//flex-direction: column;
+	
+
+}

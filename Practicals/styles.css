@@ -1,0 +1,70 @@
+body{
+	background: url("tea.jpg");
+	
+	 display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+	
+}
+#table {
+	
+	 width: 50%;
+	
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+}
+
+#the-table{
+	color:tomato;
+	border: none;
+	border-radius: 20px;
+	padding: 10px;
+	width : 95%;
+	
+
+	
+}
+.rows{
+	width; 90%;
+	border: none;
+}
+
+td,th{
+	text-align: center;
+	border-bottom:10px,solid Green;
+}
+.Header{
+	width: 100%;
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
