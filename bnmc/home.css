@@ -1,0 +1,462 @@
+/* Hero Section */
+.hero {
+    height: 600px;
+    background: linear-gradient(rgba(13, 44, 84, 0.7), rgba(13, 44, 84, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Quick Info Section */
+.quick-info {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 30px 0;
+}
+
+.quick-info .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-item i {
+    font-size: 24px;
+    color: var(--secondary-color);
+    margin-right: 15px;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 14px;
+}
+
+/* About Preview Section */
+.about-preview {
+    padding: 80px 0;
+}
+
+.about-preview .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Academic Programs Section */
+.academic-programs {
+    background-color: var(--light-bg);
+    padding: 80px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.programs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.program-card {
+    background-color: var(--light-text);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.program-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.program-icon i {
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.program-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.program-card p {
+    margin-bottom: 20px;
+}
+
+/* Facilities Section */
+.facilities {
+    padding: 80px 0;
+}
+
+.facilities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.facility-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.facility-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.facility-card h3 {
+    font-size: 18px;
+    margin: 15px 15px 5px;
+    color: var(--primary-color);
+}
+
+.facility-card p {
+    margin: 0 15px 15px;
+    font-size: 14px;
+}
+
+.facilities-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* News & Events Section */
+.news-events {
+    background-color: var(--light-bg);
+    padding: 80px 0;
+}
+
+.section-header-with-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-header-with-link h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background-color: var(--light-text);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+    height: 200px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-date {
+    font-size: 14px;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.news-date i {
+    margin-right: 5px;
+}
+
+.news-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.news-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.read-more {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.read-more:hover {
+    color: var(--primary-color);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+}
+
+.testimonials-slider {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    flex: 0 0 100%;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.quote-icon {
+    font-size: 24px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.testimonial-author h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.testimonial-author p {
+    font-size: 14px;
+    color: var(--accent-color);
+}
+
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev-btn, .next-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.testimonial-dots {
+    display: flex;
+    margin: 0 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+}
+
+/* Call to Action Section */
+.cta {
+    background: linear-gradient(rgba(13, 44, 84, 0.9), rgba(13, 44, 84, 0.9)), url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-text);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .about-preview .container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 500px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section-header-with-link {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-header-with-link .btn {
+        margin-top: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-header h2, .section-header-with-link h2, .about-content h2, .cta h2 {
+        font-size: 24px;
+    }
+}
